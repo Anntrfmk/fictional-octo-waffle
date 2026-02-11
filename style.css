@@ -20,3 +20,25 @@ button{
 #no{
     position: absolute;
 }
+
+.heart{
+    position:fixed;
+    top: -30px;;
+    font-size: 24px;
+    animation: fall 4s linear forwards;
+    z-index: 999;
+    pointer-events: none;
+
+}
+/* запуск анімації і оголошення шо саме fall*/
+@keyframes fall{
+    0%{
+    transform: translateY(0);
+    opacity:1;
+    }
+/* падає і зникає(кінцева точка в анімації*/
+    100%{
+    transform:translateY(100vh) rotate(360deg);
+    opacity:0;
+    }
+  }
